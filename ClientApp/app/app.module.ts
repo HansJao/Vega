@@ -1,6 +1,5 @@
-import { FeatureService } from './services/feature.service';
 import { FormsModule } from '@angular/forms'
-import { MakeService } from './services/make.service';
+import { VehicleService } from './services/vehicle.service';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UniversalModule } from 'angular2-universal';
@@ -34,8 +33,7 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
         ])
     ],
     providers: [
-        MakeService,
-        FeatureService
+        VehicleService
     ]
 })
 export class AppModule {
