@@ -1,4 +1,5 @@
-import {FormsModule } from '@angular/forms'
+import { FeatureService } from './services/feature.service';
+import { FormsModule } from '@angular/forms'
 import { MakeService } from './services/make.service';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -32,8 +33,9 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
             { path: '**', redirectTo: 'home' }
         ])
     ],
-    providers:[
-        MakeService
+    providers: [
+        MakeService,
+        FeatureService
     ]
 })
 export class AppModule {
