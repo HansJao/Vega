@@ -1,3 +1,4 @@
+import {FormsModule } from '@angular/forms'
 import { MakeService } from './services/make.service';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -20,6 +21,7 @@ import { VehicleFormComponent } from './components/vehicle-form/vehicle-form.com
         VehicleFormComponent
     ],
     imports: [
+        FormsModule,
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
